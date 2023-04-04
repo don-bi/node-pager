@@ -12,14 +12,66 @@
         <header>
             <img class="node-img" src="https://pluralsight2.imgix.net/paths/images/nodejs-45adbe594d.png" alt="node pic">
         </header>
-        <div class="intro">Node is an asynchronous event-driven JavaScript runtime designed to build scalable network applications.</div>
+        <h2 class="intro"><span class="node">Node</span> is an asynchronous event-driven JavaScript runtime designed to build scalable network applications.</h2>
     </div>
     <div class="info">
         
         <div class="section">
-            <h1></h1>
-            <div class="text"></div>
+            <h3>History</h3>
+            <div class="text">
+                <ul>
+                    <li>JavaScript is compiled in browsers by a JS engine. There are many such as V8 and Spidermonkey, but V8 is the most popular engine and is used by chrome.</li>
+                    <li>Since V8 was a super fast engine, people used it to create a runtime environment for JS, which is <span class="node">Node</span>.</li>
+                    <li><span class="node">Node</span> <b><i>isn't</i></b> a programming language, nor a framework, it’s a <b>runtime environment</b> for JS.</li>
+                </ul>
+            </div>
         </div>
+
+        <div class="section">
+            <h3>Asynchronous Nature</h3>
+            <div class="text">
+                <ul>
+                    <li>Allows tasks to be run simultaneously without waiting for one to end before commencing another.</li>
+                    <li>If <span class="node">Node</span> receives another event while one is running, it sends it to another worker thread to perform the new process.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>Event-Driven Nature</h3>
+            <div class="text">
+                <ul>
+                    <li>When an event is triggered in <span class="node">Node</span>, a callback function (just calling  another function) occurs in response to that event.</li>
+                    <li>This is so useful because they require significantly less resources than normal functions since they aren’t called when <span class="node">Node</span> first sees it, but once an event happens some point in the future.</li>
+                    <li>Takes much less of a toll on the CPU.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>WHat ARE MODULES?</h3>
+            <div class="text">
+                <ul>
+                    <li>Modules are similar to Python and Java libraries, and they basically contain different built-in functions of those modules that could be used after calling them.</li>
+                    <li>The syntax to call them is by setting a variable to require the module.</li>
+                    <li>const express = require('express');</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>❤️❤️ <span class="rainbow">NPM</span> ❤️❤️</h3>
+            <div class="text">
+                <ul>
+                    <li>The <span class="rainbow">GOAT</span> of all time.</li>
+                    <li>Short for the Node Package Manager, which is one of the most important parts of <span class="node">Node</span>.</li>
+                    <li>The <span class="rainbow">NPM</span> has a ton of packages and modules built by the community to use.</li>
+                    <li>Knowing different types of packages and how to use them efficiently will streamline your code a lot more and also allow you to do some really cool stuff.</li>
+                    <li>Some packages include: Socket.io, Jest, Express, etc.</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <script src="main.js"></script>
 </body>

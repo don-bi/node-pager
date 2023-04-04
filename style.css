@@ -1,3 +1,30 @@
+* {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+span.node {
+    color: #70cc6d;
+    font-weight: 800;
+}
+
+span.rainbow {
+    font-weight: 800;
+    animation: rainbowColor 10s infinite;
+}
+
+@keyframes rainbowColor {
+    0% {color: red; text-shadow: 0px 0px 3px red;}
+    13% {color: orange; text-shadow: 0px 0px 3px orange;}
+    29% {color: yellow; text-shadow: 0px 0px 3px yellow;}
+    44% {color: green; text-shadow: 0px 0px 3px green;}
+    57% {color: blue; text-shadow: 0px 0px 3px blue;}
+    70% {color: indigo; text-shadow: 0px 0px 3px indigo;}
+    83% {color: violet; text-shadow: 0px 0px 3px violet;}
+    100% {color: red; text-shadow: 0px 0px 3px red;}
+}
+
 .body {
     display: flex;
     flex-direction: column;
@@ -13,4 +40,10 @@
 .node-img {
     width: 200px;
 
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
